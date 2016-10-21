@@ -1,7 +1,5 @@
 //array
 var lettersGuessed = [];
-lettersGuessed.push(lettersGuessed);
-var guessesStr = lettersGuessed.join(',');
 var message = "Guess what letter I'm thinking of";
 var letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o",
                "p","q","r","s","t","u","v","w","x","y","z"];
@@ -47,17 +45,17 @@ document.onkeyup = function (event){
 
 
     //determines wins, losses, and guesses left
-function psychicGame(char) {
-if (userGuess === 'letterToGuess') {
-   	wins( +=1);
-   } 
+//function psychicGame(char) {
+//if (userGuess === 'letterToGuess') {
+  // 	wins( +=1);
+   //} 
 
-if (userGuess !== 'letterToGuess') {
-    guesses( -=1); 
+//if (userGuess !== 'letterToGuess') {
+  //  guesses( -=1); 
 
-} else if (guessCount === 0)
-    losses( +=1);
-}
+//} else if (guessCount === 0)
+//    losses( +=1);
+//}
 
 
 
