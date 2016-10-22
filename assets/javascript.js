@@ -7,7 +7,7 @@ var letterToGuess = '';
 var gameOver = false;
 var winCount = 0;
 var lossCount = 0;
-var guesses = 9;
+var guessCount = 9;
 
 
 
@@ -24,13 +24,6 @@ document.onkeyup = function (event){
   document.getElementById('guessesStr').innerHTML='Your guesses so far: ' + lettersGuessed;
   
 
-  
-
-//determines if correct letter guessed
-
-  //var letterToGuess = true;
-  //for (var i = 0; i < letterToGuess.length; i++)
-
 
 
  // Create code to randomly select letter (Computer)
@@ -40,7 +33,7 @@ document.onkeyup = function (event){
 
  var userGuess= 
  String.fromCharCode(event.keyCode).toLowerCase();
-lettersGuessed.push(userGuess);
+//lettersGuessed.push(userGuess);
 
 
     //determines wins, losses, and guesses left
@@ -50,11 +43,11 @@ if (userGuess === 'letterToGuess') {
   } 
 
   else {
-    guesses--
+    guessCount--
   }
   
 
- if (guesses === 0) {
+ if (guessCount === 0) {
     lossCount++
   }
 }
